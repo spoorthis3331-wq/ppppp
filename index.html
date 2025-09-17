@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ayurveda Prakriti Questionnaire</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="container">
+    <header class="hero">
+      <h1>Ayurveda Prakriti Questionnaire</h1>
+      <p class="lead">Answer 18 short questions to estimate your prakriti (Vata / Pitta / Kapha). Submit to view a concise report.</p>
+    </header>
+
+    <form id="prakritiForm" class="card" autocomplete="off">
+      <div class="meta">
+        <input type="text" name="name" placeholder="Full name (optional)" />
+        <input type="date" name="dob" title="Date of birth (optional)" />
+        <select name="gender" aria-label="gender">
+          <option value="">Gender (optional)</option>
+          <option>Female</option>
+          <option>Male</option>
+          <option>Other / Prefer not to say</option>
+        </select>
+      </div>
+
+      <section class="questions">
+        <!-- Q1 -->
+        <div class="question">
+          <label class="qtitle">1. Body frame / build</label>
+          <div class="opts">
+            <label><input type="radio" name="q1" data-v="2"> Thin, light frame (Vata)</label>
+            <label><input type="radio" name="q1" data-p="2"> Medium, muscular (Pitta)</label>
+            <label><input type="radio" name="q1" data-k="2"> Sturdy, heavier build (Kapha)</label>
+          </div>
+        </div>
+
+        <!-- Q2 -->
+        <div class="question">
+          <label class="qtitle">2. Appetite</label>
+          <div class="opts">
+            <label><input type="radio" name="q2" data-v="1"> Irregular; often forget to eat (Vata)</label>
+            <label><input type="radio" name="q2" data-p="2"> Strong, decisive appetite (Pitta)</label>
+            <label><input type="radio" name="q2" data-k="2"> Slow, steady appetite (Kapha)</label>
+          </div>
+        </div>
+
+        <!-- Q3 -->
+        <div class="question">
+          <label class="qtitle">3. Sleep pattern</label>
+          <div class="opts">
+            <label><input type="radio" name="q3" data-v="2"> Light, easily awakened (Vata)</label>
+            <label><input type="radio" name="q3" data-p="2"> Moderate; disturbed by stress (Pitta)</label>
+            <label><input type="radio" name="q3" data-k="2"> Deep, long sleep (Kapha)</label>
+          </div>
+        </div>
+
+        <!-- Q4 -->
+        <div class="question">
+          <label class="qtitle">4. Skin type</label>
+          <div class="opts">
+            <label><input type="radio" name="q4" data-v="2"> Dry, rough, thin (Vata)</label>
+            <label><input type="radio" name="q4" data-p="2"> Warm, oily, sensitive (Pitta)</label>
+            <label><input type="radio" name="q4" data-k="2"> Smooth, moist (Kapha)</label>
+          </div>
+        </div>
+
+        <!-- Q5 -->
+        <div class="question">
+          <label class="qtitle">5. Temperature preference</label>
+          <div class="opts">
+            <label><input type="radio" name="q5" data-v="2"> Prefer warm clothes / climates (Vata)</label>
+            <label><input type="radio" name="q5" data-p="2"> Prefer moderate; dislike heat (Pitta)</label>
+            <label><input type="radio" name="q5" data-k="2"> Tolerant of cold; prefer cool (Kapha)</label>
+          </div>
+        </div>
+
+        <!-- Q6 -->
+        <div class="question">
+          <label class="qtitle">6. Hair</label>
+          <div class="opts">
+            <label><input type="radio" name="q6" data-v="2"> Dry, brittle, thin (Vata)</label>
+            <label><input type="radio" name="q6" data-p="2"> Fine, early greying (Pitta)</label>
+            <label><input type="radio" name="q6" data-k="2"> Thick, oily, strong (Kapha)</label>
+          </div>
+        </div>
+
+        <!-- Q7 -->
+        <div class="question">
+          <label class="qtitle">7. Speech & memory</label>
+          <div class="opts">
+            <label><input type="radio" name="q7" data-v="2"> Quick thoughts; sometimes forgetful (Vata)</label>
+            <label><input type="radio" name="q7" data-p="2"> Sharp, logical, good memory (Pitta)</label>
+            <label><input type="radio" name="q7" data-k="2"> Slow but steady memory (Kapha)</label>
+          </div>
+        </div>
+
+        <!-- Q8 -->
+        <div class="question">
+          <label class="qtitle">8. Digestion</label>
+          <div class="opts">
+            <label><input type="radio" name="q8" data-v="1"> Irregular digestion; bloating/gas (Vata)</label>
+            <label><input type="radio" name="q8" data-p="2"> Strong digestion; acidity (Pitta)</label>
+            <label><input type="radio" name="q8" data-k="2"> Slow digestion; tendency to gain weight (Kapha)</label>
+          </div>
+        </div>
+
+        <!-- Q9 -->
+        <div class="question">
+          <label class="qtitle">9. Energy</label>
+          <div class="opts">
+            <label><input type="radio" name="q9" data-v="2"> Variable energy; bursts then tiredness (Vata)</label>
+            <label><input type="radio" name="q9" data-p="2"> Steady high energy; driven (Pitta)</label>
+            <label><input type="radio" name="q9" data-k="2"> Slow, enduring energy (Kapha)</label>
+          </div>
+        </div>
+
+        <!-- Q10 -->
+        <div class="question">
+          <label class="qtitle">10. Temperament / reaction to stress</label>
+          <div class="opts">
+            <label><input type="radio" name="q10" data-v="2"> Anxious, restless (Vata)</label>
+            <label><input type="radio" name="q10" data-p="2"> Irritable, perfectionist (Pitta)</label>
+            <label><input type="radio" name="q10" data-k="2"> Calm, withdrawn, stubborn (Kapha)</label>
+          </div>
+        </div>
+
+        <!-- Q11 -->
+        <div class="question">
+          <label class="qtitle">11. Thirst</label>
+          <div class="opts">
+            <label><input type="radio" name="q11" data-v="1"> Drinks little; forgets to drink (Vata)</label>
+            <label><input type="radio" name="q11" data-p="2"> Drinks moderate; prefers cool drinks (Pitta)</label>
+            <label><input type="radio" name="q11" data-k="2"> Drinks slowly; prefers warm drinks (Kapha)</label>
+          </div>
+        </div>
+
+        <!-- Q12 -->
+        <div class="question">
+          <label class="qtitle">12. Nails</label>
+          <div class="opts">
+            <label><input type="radio" name="q12" data-v="2"> Thin, brittle (Vata)</label>
+            <label><input type="radio" name="q12" data-p="2"> Soft, may show lines (Pitta)</label>
+            <label><input type="radio" name="q12" data-k="2"> Thick, strong (Kapha)</label>
+          </div>
+        </div>
+
+        <!-- Q13 -->
+        <div class="question">
+          <label class="qtitle">13. Body temperature</label>
+          <div class="opts">
+            <label><input type="radio" name="q13" data-v="2"> Often feel cold (Vata)</label>
+            <label><input type="radio" name="q13" data-p="2"> Often feel warm; sweat easily (Pitta)</label>
+            <label><input type="radio" name="q13" data-k="2"> Cool and moist (Kapha)</label>
+          </div>
+        </div>
+
+        <!-- Q14 -->
+        <div class="question">
+          <label class="qtitle">14. Body hair / eyebrows</label>
+          <div class="opts">
+            <label><input type="radio" name="q14" data-v="2"> Sparse, thin hair (Vata)</label>
+            <label><input type="radio" name="q14" data-p="2"> Moderate; may be fine (Pitta)</label>
+            <label><input type="radio" name="q14" data-k="2"> Thick, dense hair (Kapha)</label>
+          </div>
+        </div>
+
+        <!-- Q15 -->
+        <div class="question">
+          <label class="qtitle">15. Movement & gait</label>
+          <div class="opts">
+            <label><input type="radio" name="q15" data-v="2"> Quick, changeable movements (Vata)</label>
+            <label><input type="radio" name="q15" data-p="2"> Purposeful, efficient (Pitta)</label>
+            <label><input type="radio" name="q15" data-k="2"> Slow, steady (Kapha)</label>
+          </div>
+        </div>
+
+        <!-- Q16 -->
+        <div class="question">
+          <label class="qtitle">16. Allergies / congestion</label>
+          <div class="opts">
+            <label><input type="radio" name="q16" data-v="2"> Dryness rather than congestion (Vata)</label>
+            <label><input type="radio" name="q16" data-p="2"> Prone to inflammation, burning (Pitta)</label>
+            <label><input type="radio" name="q16" data-k="2"> Frequent congestion, mucus (Kapha)</label>
+          </div>
+        </div>
+
+        <!-- Q17 -->
+        <div class="question">
+          <label class="qtitle">17. Weight changes</label>
+          <div class="opts">
+            <label><input type="radio" name="q17" data-v="2"> Easily lose weight; hard to gain (Vata)</label>
+            <label><input type="radio" name="q17" data-p="2"> Moderate, stable weight (Pitta)</label>
+            <label><input type="radio" name="q17" data-k="2"> Tend to gain weight easily (Kapha)</label>
+          </div>
+        </div>
+
+        <!-- Q18 -->
+        <div class="question">
+          <label class="qtitle">18. Teeth & nails sensitivity</label>
+          <div class="opts">
+            <label><input type="radio" name="q18" data-v="2"> Sensitive, brittle (Vata)</label>
+            <label><input type="radio" name="q18" data-p="2"> Ulcers, gum issues (Pitta)</label>
+            <label><input type="radio" name="q18" data-k="2"> Strong (Kapha)</label>
+          </div>
+        </div>
+
+      </section>
+
+      <div class="controls">
+        <button type="submit" class="submit">Submit & Get Report</button>
+        <button type="button" id="resetBtn" class="reset">Reset</button>
+        <button type="button" id="printBtn" class="reset">Print / Save PDF</button>
+      </div>
+    </form>
+
+    <div id="report" class="report" style="display:none"></div>
+
+    <footer class="foot">Tip: This is a screening tool. For formal diagnosis consult an Ayurvedic practitioner.</footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
